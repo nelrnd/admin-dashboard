@@ -15,4 +15,18 @@
 
 body {
   font-family: 'Inter', sans-serif;
+  background-color: var(--grey);
+}
+
+.sidebar {
+  color: white;
+  background-color: var(--main);
+}
+
+.header {
+  background-color: white;
+}
+
+.card {
+  background-color: white;
 }
