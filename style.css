@@ -16,15 +16,31 @@
 body {
   font-family: 'Inter', sans-serif;
   background-color: var(--grey);
+
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: auto 1fr 1fr;
 }
 
 .sidebar {
   color: white;
   background-color: var(--main);
+  grid-row: 1 / -1;
 }
 
 .header {
   background-color: white;
+  grid-column: 2 / 4;
+}
+
+.projects {
+  grid-row: 2 / 4;
+}
+
+.announcements,
+.trending {
+  grid-column: 3 / 4;
 }
 
 .card {
