@@ -20,13 +20,47 @@ body {
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
-  grid-template-rows: auto 1fr 1fr;
+  grid-template-rows: auto auto 1fr;
+}
+
+ul {
+  list-style: none;
 }
 
 .sidebar {
   color: white;
   background-color: var(--main);
+  padding: 2rem;
   grid-row: 1 / -1;
+}
+
+.branding {
+  font-size: 30px;
+  font-weight: bold;
+
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.navigation li a {
+  font-size: 24px;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.gap {
+  margin-top: 4rem;
 }
 
 .header {
@@ -46,3 +80,4 @@ body {
 .card {
   background-color: white;
 }
+
